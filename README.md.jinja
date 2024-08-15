@@ -1,0 +1,23 @@
+# {{extension_name}} {{short_desc}}
+{{long_desc}}
+
+# install
+`pip3 install cocotbext_{{extension_name}}`
+
+#Usage
+
+```
+from cocotbext.{{extension_name}} import {{extension_name|capitalize}}Bus,{{extension_name|capitalize}}Driver,{{extension_name|capitalize}}Config
+
+....
+class Env:
+   def __init__(self,dut):
+	{{extension_name}}_bus = {{extension_name|capitalize}}Bus(from_prefix='...',dut=....)
+	{{extension_name}}_config = {{extension_name|capitalize}}Config()
+	{{extension_name}}_config.<key>=<value>
+	{{extension_name}}_driver = {{extension_name}}Driver({{extension_name}}_bus, {{extension_name}}_config)
+   async def xyz(self):
+ 	{{extension_name}}_driver.write(address,byteArray)
+ 	rv ={{extension_name}}_driver.read(address,numbytes)
+	assert rv=byteArray, "Data mismatch at %X"%(address)
+
