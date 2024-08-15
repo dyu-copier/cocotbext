@@ -1,0 +1,10 @@
+from .config import default_config
+class({{extension_name|capitalize}}Driver:
+        def __init__(self,bus,config=default_config):
+                pass
+        async def write(self,address:int, data:bytes):
+                pass
+        async def read(self,address:int,numBytes:int):
+                pass
+        async def _txrx(self):
+                pass

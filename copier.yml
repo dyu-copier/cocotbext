@@ -1,0 +1,21 @@
+#Questions
+extension_name:
+  type: str
+  help: extension_name -- This will be imported as "from cocotbext.<extension_name> import ..."
+
+project_name:
+  type: str
+  default: peakrdl_{{function_name}}
+  help: ProjectName-- The ProjectName should be peakrdl_<function> (note underscore)
+project_short_desc:
+  type: str
+  help: short description
+project_long_desc:
+  type: str
+  help: long description
+author:
+  type: str
+  help: Author
+email:
+  type: str
+  help: email

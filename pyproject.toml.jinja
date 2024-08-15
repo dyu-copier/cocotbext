@@ -1,0 +1,22 @@
+[build-system]
+requires= ['pdm-backend']
+build-backend = 'pdm.backend'
+
+[project]
+require-python = ">=3.8"
+name = "cocotbext-<module>"
+description = "{{short_desc}}"
+package-dir = "src"
+classifiers = ['Development Status :: 4 - Beta',
+ "Intended Audience :: Developers",
+"Programming Language :: Python :: 3.8",
+]
+version="2024.05.25"
+dependencies = ['cocotb']
+authors = [{name = "{{author}}", email = "{{email}}"}]
+maintainers = [{name = "{{author}}", email = "{{email}}"}]
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
