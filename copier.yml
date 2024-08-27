@@ -5,8 +5,8 @@ extension_name:
 
 project_name:
   type: str
-  default: peakrdl_{{function_name}}
-  help: ProjectName-- The ProjectName should be peakrdl_<function> (note underscore)
+  default: cocotbext_{{extension_name}}
+  help: ProjectName-- The ProjectName should be cocotbext_<extension_name> (note underscore)
 project_short_desc:
   type: str
   help: short description
