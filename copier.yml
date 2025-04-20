@@ -10,6 +10,7 @@ project_name:
 project_short_desc:
   type: str
   help: short description
+  default: COCOTB VIP for {{extension_name}} protocol
 project_long_desc:
   type: str
   help: long description
