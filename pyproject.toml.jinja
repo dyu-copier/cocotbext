@@ -1,18 +1,18 @@
 [build-system]
-requires= ['pdm-backend']
-build-backend = 'pdm.backend'
+requires= ["pdm-backend"]
+build-backend = "pdm.backend"
 
 [project]
 require-python = ">=3.8"
 name = "cocotbext-{{extension_name}}"
-description = "{{short_desc}}"
+description = "{{project_short_desc}}"
 package-dir = "src"
-classifiers = ['Development Status :: 4 - Beta',
+classifiers = ["Development Status :: 4 - Beta",
  "Intended Audience :: Developers",
 "Programming Language :: Python :: 3.8",
 ]
 version="2024.05.25"
-dependencies = ['cocotb']
+dependencies = ["cocotb"]
 authors = [{name = "{{author}}", email = "{{email}}"}]
 maintainers = [{name = "{{author}}", email = "{{email}}"}]
 [tool.pytest.ini_options]
@@ -51,7 +51,7 @@ docs = [
     "mkdocs-material>=9.4",
     "mkdocs-minify-plugin>=0.7",
     "mkdocstrings[python]>=0.23",
-    "tomli>=2.0; python_version < '3.11'",
+    'tomli>=2.0; python_version < "3.11"',
 ]
 maintain = [
     "black>=23.9",
