@@ -3,7 +3,8 @@ requires= ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [project]
-require-python = ">=3.8"
+dynamic = ["version"]
+requires-python = ">=3.9"
 name = "cocotbext-{{extension_name}}"
 description = "{{project_short_desc}}"
 package-dir = "src"
@@ -66,6 +67,7 @@ tests = [
     "pytest-cov>=4.1",
     "pytest-randomly>=3.15",
     "pytest-xdist>=3.3",
+    "cocotb-test"
 ]
 typing = [
     "mypy>=1.5",
